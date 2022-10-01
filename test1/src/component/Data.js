@@ -22,7 +22,7 @@ let onChangeHandle=(e)=>{
 
 
     return (
-        <div className='container'>
+        <div className='container m-5'>
             <div>
                 <label htmlFor="">Name :</label> <br />
                 <input type="text" id='name' onChange={onChangeHandle} /> <br />
@@ -33,7 +33,7 @@ let onChangeHandle=(e)=>{
                 <button onClick={AddNewUser} className='btn btn-warning m-4'>Add new user</button>
             </div>
 
-            <div className="carCompo m-5">
+            <div className="carCompo">
             {
 
                 data.map((user)=>{
@@ -48,8 +48,6 @@ let onChangeHandle=(e)=>{
             }
                 
             </div>
-
-            <button className='btn btn-danger' onClick={show}>Show</button>
         </div>
     )
 }
